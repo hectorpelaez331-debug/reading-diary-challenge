@@ -20,7 +20,7 @@ class Book:
         self.author:str = author
         self.pages : int= pages
         self.rating:int = Book.UNRATED
-        self.notes: list = []
+        self.notes: listz[Note] = []
 
     def add_note(self, text: str, page: int, date: datetime) -> bool:
         if page > self.pages:
